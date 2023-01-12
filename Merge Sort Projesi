@@ -1,0 +1,17 @@
+[16,21,11,8,12,22] -> Merge Sort aşamaları:
+  
+                    [16,21,11,8,12,22]                                                         
+       [16,21,11]                       [8,12,22]               Dizi ortadan ikiye bölünür
+       [16] [21,11]                     [8,12] [22]             Bölünmüş parçalar sıralanmak için tekrar bölünür
+       [16] [22] [11]                   [8] [12] [22]           Elemanlar sıralanır
+       [16] [11,22]                     [8,12] [22]             Elemanlar sıralandıktan sonra en son bölününen dizi tekrar birleştirilir
+       [11,16,22]                       [8,12,22]               Diziler karşılaştırılarak küçükten büyüğe sıralanarak birleştirilir
+                    [8,11,12,16,21,22]
+                   
+Big-O gösterimi
+
+Her aşamada yapılacak işlem saıyısı ikiye bölündüğü için işlem sayısı yarıya düşer
+n, n/2, n/4.....
+2^x=n
+logn=x
+0(nlogn)
